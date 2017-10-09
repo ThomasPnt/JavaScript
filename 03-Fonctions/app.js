@@ -14,17 +14,22 @@ var foi = function (a,b) {
   return a * b ;
 }
 
-var cent = function (a,b) {
-  return ((a/100)*b)+'%';
-}
-
 var fast = function (a,b) {
   return (a/b)+'Km/h';
 }
 
-alert(fast(100,2));
-alert(less(100,2));
-alert(add(100,2));
-alert(div(100,2));
-alert(foi(100,2));
-alert(cent(47,155));
+var partielle ;
+var totale ;
+
+function test(partielle,totale) {
+  return (100*(partielle/totale))+'%' ;
+}
+
+console.log(test(12,5));
+
+console.log(fast(100,2));
+console.log(less(100,2));
+console.log(add(100,2));
+console.log(div(100,2));
+console.log(foi(100,2));
+console.log(fast(100,10));
