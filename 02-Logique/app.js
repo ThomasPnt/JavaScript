@@ -1,15 +1,18 @@
-var lang = prompt('What langage do you want?');
-var msg ;
+var lang = "fr";
+var msg;
 
+switch (lang) {
+  case 1:
+    msg = 'Bonjour tout le monde';
+  break;
 
-if lang = 'fr' {
-  alert('Bonjour tout le monde')
+  case 2:
+    msg = 'Hello world';
+  break;
+
+  case 3:
+    msg = 'Hola Mundo';
+  break;
 }
 
-if lang = 'es' {
-  alert('Hola, Mundo')
-}
-
-if lang = 'en' {
-  alert('Hello world')
-}
+alert(msg);
