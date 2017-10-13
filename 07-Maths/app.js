@@ -26,6 +26,10 @@ console.log(randFifty);
 let randOne = Math.floor((Math.random() * 2)  + 0);
 console.log(randOne);
 
+// random entre 0 et 10 inclu
+
+let randTen = Math.floor((Math.random() * 11) + 0);
+console.log(randTen);
 
 //exercice 4
 
