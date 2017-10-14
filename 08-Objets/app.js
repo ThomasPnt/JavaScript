@@ -14,7 +14,8 @@ function giveItem () {
   console.log(giveItem);
 }
 
-console.log(giveItem());
+giveItem(Character);
+
 // valeur undefined ! Why?
 
 console.log(rand);
@@ -29,36 +30,66 @@ var shop = [{ nom : 'Epée',
               minLevel : 3,
               available : true
 },
-            { nom : 'Bouclier',
-              physic : 5,
-              magic : 5,
-              minLevel : 9,
-              available : true
+            { nom: 'Bouclier',
+              physic: 5,
+              magic: 5,
+              minLevel: 9,
+              available: true
 },
-            { nom : 'Masse',
-              physic : 15,
-              magic : 0,
-              minLevel : 12,
-              available : false
+            { nom: 'Masse',
+              physic: 15,
+              magic: 0,
+              minLevel: 12,
+              available: false
 },
-            { nom : 'Lance',
-              physic : 20,
-              magic : 10,
-              minLevel : 17,
-              available : true
+            { nom: 'Lance',
+              physic: 20,
+              magic: 10,
+              minLevel: 17,
+              available: true
 },
-            { nom : 'Bâton',
-              physic : 10,
-              magic : 20,
-              minLevel : 15,
-              available : true
+            { nom: 'Bâton',
+              physic: 10,
+              magic: 20,
+              minLevel: 15,
+              available: true
 }];
 
-console.log(shop);
-
+//fonction pour afficher les objets
 function affiche_Objet() {
-  var nameShop = shop.nom;
-  console.log(nameShop);
+  for ( i in shop) {
+    console.log(shop[i].nom);
+  }
 }
 
-console.log(affiche_Objet());
+affiche_Objet(shop)
+
+//fonction pour afficher la disponibilité en fonction du niveau des objets
+
+function peutEquiper() {
+  for (var i = 0; i < shop.length; i++){
+    if (shop[i].minLevel > 10){
+      console.log('Tu ne peux pas équiper la ' + shop[i].nom + ' il faut être niveau '+ shop[i].minLevel + "!");
+    } else {
+      console.log('Au niveau 10 tu peux équiper ' + shop[i].nom +'!');
+    }
+  }
+}
+
+peutEquiper()
+
+//fonction pour afficher les objets disponible
+
+function disponibilite() {
+  for (var i = 0; i < shop.length; i++) {
+    if (shop[i].available == true ) {
+      console.log("L'arme "+shop[i].nom+" est disponible!");
+    } else {
+      console.log("L'arme "+shop[i].nom+" n'est plus disponible!");
+    }
+  }
+}
+
+disponibilite()
+
+//Exercice Personnage!
