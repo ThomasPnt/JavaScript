@@ -93,3 +93,25 @@ function disponibilite() {
 disponibilite()
 
 //Exercice Personnage!
+
+let mainCharacter = {
+  name: 'Thomas' ,
+  level: 12 ,
+  life: 140,
+  weapon:   { name: "Arbalète",
+            damage: 15
+            },
+  attack: function() {
+    mainCharacter.weapon.damage * mainCharacter.level
+  }
+}
+
+//Ajouter la fonction attaque de l'arme
+
+function attackThomas() {
+  console.log(mainCharacter.name+" attaque avec l'arme "+mainCharacter.weapon.name+" les dégats sont de " +(mainCharacter.weapon.damage * mainCharacter.level) );
+}
+
+attackThomas()
+
+attack()
