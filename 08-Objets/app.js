@@ -1,20 +1,20 @@
-var Character = {
+var myCharacter = {
                 name: 'Thomas',
                 age: 21,
                 items_to_give : ['Ballon','Cerveau','Voiture'],
 }
-for ( i in Character) {
+for ( i in myCharacter) {
   document.getElementById("test").innerHTML += i + "</br>"  ;
 }
 
-var rand = Character.items_to_give;
+var rand = myCharacter.items_to_give;
 
 function giveItem () {
   var giveItem = rand[Math.floor(Math.random() * rand.length)];
   console.log(giveItem);
 }
 
-giveItem(Character);
+giveItem(myCharacter);
 
 // valeur undefined ! Why?
 
@@ -108,4 +108,14 @@ let mainCharacter = ({
 
 mainCharacter.attack()
 
-//Ajouter la fonction attaque de l'arme
+//Exercice Opponent à refaire !
+
+let Character = { name: "Axel",
+                        level: 9,
+                        life: 120,
+                        weapon: { name: "Epée",
+                                  damage: 10,
+                        } ,
+                        attack: function() {} ,
+                        receiveDamage: function () {}
+}
