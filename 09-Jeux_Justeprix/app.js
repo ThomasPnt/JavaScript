@@ -1,13 +1,13 @@
-var message;
-var essai;
+var message = "";
+var essai = 0;
 var numMin = 20;
 var numMax = 80;
 
 function numAleatoire() {
-  (Math.floor((Math.random()*(numMax-numMin))+numMin));
+   console.log((Math.floor((Math.random()*(numMax-numMin))+numMin)));
 }
 
-var win = numAleatoire(numMin,numMax);
+var win = numAleatoire();
 
 function victoire() {
   console.log("C'est juste tu as trouvé en "+essai+" coups!");
@@ -15,13 +15,21 @@ function victoire() {
 }
 
 function principal() {
-  var message = window.prompt('Trouve le nombre entre 20 et 80');
-    if(message==win) {
+  var input = window.prompt(' Trouve le nombre entre 20 et 80');
+  essai + 1;
+    if (input == win) {
       victoire();
-    } else if (message > win) {
-        console.log("C'est moins");
-        principal();
-    } else if (message < win) {
-
+    }
+    else if (input > win) {
+      window.alert("C'est moins");
+      principal();
+    }
+    else if (input < win) {
+      window.alert("C'est plus");
+      principal();
     }
 }
+
+principal();
+
+//Comprend pas pourquoi ca marche pas
