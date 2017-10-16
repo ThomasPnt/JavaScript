@@ -16,9 +16,6 @@ function guessLetter(){
       else if(game===words){
        alert('Vous avez trouvé le mot');
       }
-    while(words== 6) {
-      console.log('Vous avez trouvé le mot');
-    }
     }
   }
 }
