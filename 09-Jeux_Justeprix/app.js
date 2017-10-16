@@ -27,9 +27,7 @@ function principal() {
 
 function victoire() {
   console.log("C'est juste tu as trouvé en "+essai+" coups!");
-  document.write("C'est juste tu as trouvé en "+essai+" coups!");
+  window.alert("C'est juste tu as trouvé en "+essai+" coups!");
 }
 
-
 principal();
-  
