@@ -39,3 +39,13 @@ h3.innerHTML = "<em>Itelic title ! yeah !</em>";
 var h2 = document.querySelector('h2');
 h2.innerText = "<strong>HTML doens't work !</strong>";
 h2.style.color= "yellow";
+
+var ul = document.querySelector('ul');
+
+var li = document.querySelector('li');
+var li2 = document.createElement('li');
+li2.innerHTML = "Mon meilleur ami est <a href='http://www.google.com'>Google</a>";
+li.parentElement.appendChild(li2);
+
+var lienli = document.querySelector('li a');
+lienli.style.color = "yellow";
