@@ -49,3 +49,5 @@ li.parentElement.appendChild(li2);
 
 var lienli = document.querySelector('li a');
 lienli.style.color = "yellow";
+
+var ol = document.querySelector('ol');
