@@ -51,11 +51,18 @@ var lienli = document.querySelector('li a');
 lienli.style.color = "yellow";
 
 var ol = document.querySelector('ol');
-var olchild = document.querySelector('ol');
-while ( olchild == true ) {
-  ol.removeChild(li);
+while ( ol.firstChild ) {
+  ol.removeChild(ol.firstChild);
 }
 
-
-
 let tab = ["Silent Teacher","Code Monkey", "CodeCombat"]
+ // for (var i = 0; i < tab.length; i++) {
+ //   tab[i] = document.createElement('li');
+ // }
+
+tab.forEach(function(e, index){
+var li = document.createElement('li');
+  li.innerHTML = e  
+  tab[index] = li;
+  ol.appendChild(li)
+})
