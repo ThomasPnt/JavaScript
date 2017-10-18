@@ -23,6 +23,10 @@ function principal() {
      window.alert("C'est plus");
      principal();
   }
+  else if (input = isNaN) {
+    window.alert("Lis les règles");
+    principal();
+  }
 }
 
 function victoire() {

@@ -13,7 +13,7 @@ function guessLetter(){
        game[y]=test;
        console.log(game);
       }
-      else if(game===words){
+      else if(game===words  ){
        alert('Vous avez trouvé le mot');
       }
     }
