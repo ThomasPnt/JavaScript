@@ -77,11 +77,6 @@ function call(resultat) {
   })
   console.log(tab4.length +' personnes vivent à Bahrain!');
 
-  resultat.sort(function(user,user1){
-    var scoreMax = user1.score - user.score;
-    return scoreMax;
-    console.log(scoreMax);
-  })
-
-
+  console.log(resultat[0]);
+  console.log(resultat[resultat.length - 1]);
 }
