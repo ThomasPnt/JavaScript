@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+.contain {
+  margin: 0;
+  width: 100%;
+}
+
+.hoverMe {
+  display: inline-block;
+  width: 45%;
+  height: 100px;
+}
+
+#reset {
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  background-color: yellow;
+}
+
+.axe-x {
+  width: 25%;
+  height: 50px;
+}
+
+.axe-y{
+  width: 25%;
+  height: 50px;
+}
