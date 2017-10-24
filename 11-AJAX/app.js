@@ -39,7 +39,7 @@ function call(resultat) {
   // function bahrain(country) {
   //   return country === "Bahrain";
   // }
-  resultat.forEach(function(user){
+  resultat.map(function(user){
   var score = Math.floor(Math.random()*1000)+0;
   user.score = score;
   return user;
@@ -54,7 +54,7 @@ function call(resultat) {
   var tab2 = [];
   var tab3 = [];
 
-  resultat.forEach(function(user){
+  resultat.map(function(user){
    if(user.score > 750) {
     return tab1.push(user);
   } else if (user.score > 500 ) {
